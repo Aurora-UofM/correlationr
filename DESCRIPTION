@@ -1,0 +1,15 @@
+Package: correlationr
+Type: Package
+Title: Conducting robust correlations
+Version: 0.1.0
+Authors@R: c(
+    person("Johnson", "Li", email = "johnson.li@umanitoba.ca", role = "aut")),
+    person("Aurora", "Robert", email = "roberta5@myumanitoba.ca", role = c("cre"
+    , "aut"))
+Maintainer: The package maintainer <roberta5@myumanitoba.ca>
+Description: Allows you to conduct robust correlations on your data set. The 
+    robust correlations included in this packsge are median absolute deviation,
+    median based and trimmed correlations. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true

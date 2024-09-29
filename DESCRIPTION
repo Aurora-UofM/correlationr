@@ -7,9 +7,9 @@ Authors@R: c(
     person("Aurora", "Robert", email = "roberta5@myumanitoba.ca", role = c("cre"
     , "aut"))
 Maintainer: The package maintainer <roberta5@myumanitoba.ca>
-Description: Allows you to conduct robust correlations on your data set. The 
-    robust correlations included in this packsge are median absolute deviation,
-    median based and trimmed correlations. 
+Description: Allows you to conduct robust correlations on your non-normal data set. The 
+    robust correlations included in this packsge are median-absolute-deviation and
+    median-based correlations. 
 License: GPL-3
 Encoding: UTF-8
 LazyData: true

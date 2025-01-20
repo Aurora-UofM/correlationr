@@ -1,15 +1,16 @@
 Package: correlationr
 Type: Package
-Title: Conducting robust correlations
+Title: Conduct Robust Correlations on Non-Normal Data
 Version: 0.1.0
 Authors@R: c(
-    person("Johnson", "Li", email = "johnson.li@umanitoba.ca", role = "aut")),
+    person("Johnson", "Li", email = "johnson.li@umanitoba.ca", role = "aut", comment = c(ORCID = "")),
     person("Aurora", "Robert", email = "roberta5@myumanitoba.ca", role = c("cre"
-    , "aut"))
+    , "aut"), comment = c(ORCID = "0009-0004-9206-1595")))
 Maintainer: The package maintainer <roberta5@myumanitoba.ca>
 Description: Allows you to conduct robust correlations on your non-normal data set. The 
     robust correlations included in this packsge are median-absolute-deviation and
     median-based correlations. 
+BugReports: https://github.com/Aurora-UofM/correlationr/issues
 License: GPL-3
 Encoding: UTF-8
 LazyData: true

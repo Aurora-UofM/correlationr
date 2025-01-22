@@ -15,7 +15,5 @@ BugReports: https://github.com/Aurora-UofM/correlationr/issues
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-Depends: 
-    dplyr,
-    R (>= 3.5)
+Depends: R (>= 3.5)
 RoxygenNote: 7.3.2

@@ -21,5 +21,3 @@
 #' rm_corr <- (median(abs(U2))^2-median(abs(V2))^2)/(median(abs(U2))^2+median(abs(V2))^2);
 #' return(rm_corr);
 #' }
-#'
-#' @importFrom dplyr %>%

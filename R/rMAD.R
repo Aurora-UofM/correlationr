@@ -21,4 +21,6 @@
 #' r_corr <- (mad(U)^2-mad(V)^2)/(mad(U)^2+mad(V)^2);
 #' return(r_corr);
 #' }
+#'
+#' @importFrom dplyr %>%
 

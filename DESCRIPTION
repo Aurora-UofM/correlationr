@@ -14,6 +14,5 @@ URL: https://liqas.org/1-correlationr-package/
 BugReports: https://github.com/Aurora-UofM/correlationr/issues
 License: GPL-3
 Encoding: UTF-8
-LazyData: true
 Depends: R (>= 3.5)
 RoxygenNote: 7.3.2

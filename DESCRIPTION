@@ -8,7 +8,7 @@ Authors@R: c(
     , "aut"), comment = c(ORCID = "0009-0004-9206-1595")))
 Maintainer: Aurora Robert <roberta5@myumanitoba.ca>
 Description: Allows you to conduct robust correlations on your non-normal data set. The 
-    robust correlations included in this packsge are median-absolute-deviation and
+    robust correlations included in this package are median-absolute-deviation and
     median-based correlations. 
 URL: https://liqas.org/1-correlationr-package/
 BugReports: https://github.com/Aurora-UofM/correlationr/issues

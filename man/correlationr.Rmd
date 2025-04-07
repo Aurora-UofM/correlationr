@@ -1,0 +1,13 @@
+\name{correlationr}
+\alias{correlationr}
+\title{Robust Correlations}
+\usage{
+rMAD()
+rMED()
+}
+\description{
+Runs a median absolute deviation correlation
+}
+\examples{
+INSERT
+}

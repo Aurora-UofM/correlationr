@@ -12,10 +12,15 @@ rMED(x, y)
 \item{y}{a continuous variable}
 }
 \value{
-a correlation value
+a correlation value (r) that ranges from -1 to +1
 }
 \description{
 Performs a median based correlation which is used to examine
 whether two continuous variables (X and Y) are linearly related using a
 median correlation coefficient.
+}
+\examples{
+rMED()
+rMED(SwimLessons$Temp, SwimLessons$SwimTime)
+
 }

@@ -12,10 +12,14 @@ rMAD(x, y)
 \item{y}{a continuous variable}
 }
 \value{
-a correlation value
+a correlation value (r) that ranges from -1 to +1
 }
 \description{
 Performs a median-absolute-deviation correlation which is
 used to examine whether two continuous variables (X and Y) are linearly related
 using a deviate estimation, called the median absolute deviation.
+}
+\examples{
+rMAD()
+rMAD(SwimLessons$Temp, SwimLessons$SwimTime)
 }

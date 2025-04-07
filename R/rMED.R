@@ -1,25 +1,20 @@
-#' @title rMED
+#' Median Based (MED) Correlations
 #'
-#' @description Performs a median-based correlation
+#' @description Performs a median based correlation which is used to examine
+#' whether two continuous variables (X and Y) are linearly related using a
+#' median correlation coefficient.
 #'
-#' @param x A continuous variable in your dataset of interest
-#' @param y A continuous variable in your dataset of interest
-#' @param U2=(x-median(x))/(median(abs(x-median(x))))+(y-median(y))/(median(abs(y-median(y))))
-#' @param V2=(x-median(x))/(median(abs(x-median(x))))-(y-median(y))/(median(abs(y-median(y))))
+#' @param x a continuous variable
+#' @param y a continuous variable
 #'
-#' @return A median-based correlation value
+#' @return
+#' @export
 #'
 #' @examples
-#' data(SwimLessons)
-#' x <- SwimLessons$Temp
-#' y <- SwimLessons$SwimTime
-#'
-#' @export
-#' rMED <- function(x, y){
-#' U2 = (x-median(x))/(median(abs(x-median(x))))+(y-median(y))/(median(abs(y-median(y))));
-#' V2 = (x-median(x))/(median(abs(x-median(x))))-(y-median(y))/(median(abs(y-median(y))));
-#' rm_corr <- (median(abs(U2))^2-median(abs(V2))^2)/(median(abs(U2))^2+median(abs(V2))^2);
-#' return(rm_corr);
-#' }
-#'
-#' @importFrom dplyr %>%
+rMED <- function(x, y){
+  U = (x-median(x))/(median(abs(x-median(x))))+(y-median(y))/(median(abs(y-median(y))))
+  V = (x-median(x))/(median(abs(x-median(x))))-(y-median(y))/(median(abs(y-median(y))))
+  r_corr <- (median(abs(U))^2-median(abs(V))^2)/(median(abs(U))^2+median(abs(V))^2)
+  return(r_corr)
+}
+

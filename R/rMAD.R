@@ -1,26 +1,21 @@
-#' @title rMAD
+#' Median Absolute Deviation (MAD) Correlations
 #'
-#' @description Performs a median-absolute-deviation correlation
+#' @description Performs a median-absolute-deviation correlation which is
+#' used to examine whether two continuous variables (X and Y) are linearly related
+#' using a deviate estimation, called the median absolute deviation.
 #'
-#' @param x A continuous variable
-#' @param y A continuous variable
-#' @param U=(x-median(x))/(sqrt(2)*mad(x))+(y-median(y))/(sqrt(2)*mad(y))
-#' @param V=(x-median(x))/(sqrt(2)*mad(x))-(y-median(y))/(sqrt(2)*mad(y))
+#' @param x a continuous variable
+#' @param y a continuous variable
 #'
-#' @return A median-absolute-deviation correlation value
+#' @return
+#' @export
 #'
 #' @examples
-#' data(SwimLessons)
-#' x <- SwimLessons$Temp
-#' y <- SwimLessons$SwimTime
-#'
-#' @export
-#' rMAD <- function(x, y){
-#' U = (x-median(x))/(sqrt(2)*mad(x))+(y-median(y))/(sqrt(2)*mad(y));
-#' V = (x-median(x))/(sqrt(2)*mad(x))-(y-median(y))/(sqrt(2)*mad(y));
-#' r_corr <- (mad(U)^2-mad(V)^2)/(mad(U)^2+mad(V)^2);
-#' return(r_corr);
-#' }
-#'
-#' @importFrom dplyr %>%
+rMAD <- function(x, y){
+  U = (x-median(x))/(sqrt(2)*mad(x))+(y-median(y))/(sqrt(2)*mad(y))
+  V = (x-median(x))/(sqrt(2)*mad(x))-(y-median(y))/(sqrt(2)*mad(y))
+  r_corr <- (mad(U)^2-mad(V)^2)/(mad(U)^2+mad(V)^2)
+  return(r_corr)
+}
+
 

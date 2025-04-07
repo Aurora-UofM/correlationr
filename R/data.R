@@ -10,8 +10,8 @@
 #'    \item{UV}{The UV index during the swim lesson}
 #'    }
 #'
-#'    @source {Created in-house to serve as an example.}
+#' @source {Created in-house to serve as an example dataset for the package correlationr.}
 #'
-#'    @examples
-#'    data(SwimLessons)
+#' @examples
+#'  data(SwimLessons)
 "SwimLessons"

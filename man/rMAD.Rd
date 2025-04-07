@@ -11,6 +11,9 @@ rMAD(x, y)
 
 \item{y}{a continuous variable}
 }
+\value{
+a correlation value
+}
 \description{
 Performs a median-absolute-deviation correlation which is
 used to examine whether two continuous variables (X and Y) are linearly related

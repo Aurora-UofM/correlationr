@@ -11,6 +11,9 @@ rMED(x, y)
 
 \item{y}{a continuous variable}
 }
+\value{
+a correlation value
+}
 \description{
 Performs a median based correlation which is used to examine
 whether two continuous variables (X and Y) are linearly related using a

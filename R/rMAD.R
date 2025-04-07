@@ -7,10 +7,12 @@
 #' @param x a continuous variable
 #' @param y a continuous variable
 #'
-#' @return
+#' @return a correlation value (r) that ranges from -1 to +1
 #' @export
 #'
-#' @examples
+#' @examples rMAD()
+#' @examples rMAD(SwimLessons$Temp, SwimLessons$SwimTime)
+
 rMAD <- function(x, y){
   U = (x-median(x))/(sqrt(2)*mad(x))+(y-median(y))/(sqrt(2)*mad(y))
   V = (x-median(x))/(sqrt(2)*mad(x))-(y-median(y))/(sqrt(2)*mad(y))

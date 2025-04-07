@@ -7,10 +7,13 @@
 #' @param x a continuous variable
 #' @param y a continuous variable
 #'
-#' @return
+#' @return a correlation value (r) that ranges from -1 to +1
 #' @export
 #'
-#' @examples
+#' @examples rMED()
+#' @examples rMED(SwimLessons$Temp, SwimLessons$SwimTime)
+#'
+
 rMED <- function(x, y){
   U = (x-median(x))/(median(abs(x-median(x))))+(y-median(y))/(median(abs(y-median(y))))
   V = (x-median(x))/(median(abs(x-median(x))))-(y-median(y))/(median(abs(y-median(y))))

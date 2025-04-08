@@ -3,3 +3,5 @@
 export(rMAD)
 export(rMED)
 importFrom(dplyr,"%>%")
+importFrom(stats,mad)
+importFrom(stats,median)

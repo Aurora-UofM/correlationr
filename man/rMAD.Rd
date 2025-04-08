@@ -20,6 +20,5 @@ used to examine whether two continuous variables (X and Y) are linearly related
 using a deviate estimation, called the median absolute deviation.
 }
 \examples{
-rMAD()
 rMAD(SwimLessons$Temp, SwimLessons$SwimTime)
 }

@@ -10,7 +10,6 @@
 #' @return a correlation value (r) that ranges from -1 to +1
 #' @export
 #'
-#' @examples rMED()
 #' @examples rMED(SwimLessons$Temp, SwimLessons$SwimTime)
 #'
 

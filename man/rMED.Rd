@@ -20,7 +20,6 @@ whether two continuous variables (X and Y) are linearly related using a
 median correlation coefficient.
 }
 \examples{
-rMED()
 rMED(SwimLessons$Temp, SwimLessons$SwimTime)
 
 }
